@@ -6,18 +6,16 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#2CFFFFFF"
-    android:padding="10dp"
     tools:context=".MainActivity">
-
     <TextView
         android:id="@+id/titulo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#FFEB3B"
+        android:background="#f49600"
         android:padding="10dp"
         android:text="COMANDA"
         android:textAlignment="center"
-        android:textColor="#3F51B5"
+        android:textColor="#ffffff"
         android:textSize="25sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
@@ -40,7 +38,7 @@
         android:layout_height="120sp"
         android:layout_marginTop="15dp"
         android:background="#FFFFFF"
-        android:scaleType="fitCenter"
+        android:scaleType="centerInside"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/titulo"
         app:srcCompat="@drawable/drink" />
@@ -60,7 +58,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:paddingBottom="10dp"
+        android:layout_margin="5dp"
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/imgbebida">
 
@@ -138,6 +138,7 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:paddingBottom="10dp"
+        android:padding="10dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/imgplato">
 
@@ -174,6 +175,18 @@
                 android:inputType="number"
                 tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
         </LinearLayout>
+
+
     </LinearLayout>
 
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#F49600"
+        android:text="Totalizar compra"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/lyt_plato" />
 </androidx.constraintlayout.widget.ConstraintLayout>
