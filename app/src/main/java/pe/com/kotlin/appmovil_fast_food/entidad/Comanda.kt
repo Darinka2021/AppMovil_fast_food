@@ -4,7 +4,7 @@ class Comanda {
 
 
 //hola  que tal como estas s
-
+//bien xd
 
 
 
