@@ -44,7 +44,7 @@
         app:srcCompat="@drawable/drink" />
 
     <Spinner
-        android:id="@+id/spinner"
+        android:id="@+id/sp_bebidas"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginLeft="10dp"
@@ -77,6 +77,7 @@
             <EditText
                 android:id="@+id/edt_precio_bebida"
                 android:layout_width="match_parent"
+                android:enabled="false"
                 android:layout_height="wrap_content"></EditText>
         </LinearLayout>
 
@@ -154,6 +155,7 @@
 
             <EditText
                 android:id="@+id/edt_precio_plato"
+                android:enabled="false"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"></EditText>
         </LinearLayout>
@@ -173,6 +175,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="number"
+                android:maxLength="2"
                 tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
         </LinearLayout>
 
@@ -180,13 +183,25 @@
     </LinearLayout>
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btn_limpiar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:backgroundTint="#F49600"
+        android:text="limpiar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/lyt_plato"
+        />
+
+    <Button
+        android:id="@+id/btn_totalizar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:backgroundTint="#F49600"
-        android:text="Totalizar compra"
+        android:text="totalizar compra"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btn_limpiar"
         app:layout_constraintTop_toBottomOf="@id/lyt_plato" />
 </androidx.constraintlayout.widget.ConstraintLayout>
