@@ -38,4 +38,6 @@
     <string name="home_title">Pago realizado!</string>
     <string name="home_sub_title">Muchas Gracias</string>
     <string name="btn_logout">Volver al Menú</string>
+    <string name="title_detalle">Detalles de tu pedido</string>
+    <string name="title_bar">SuperTasty</string>
 </resources>

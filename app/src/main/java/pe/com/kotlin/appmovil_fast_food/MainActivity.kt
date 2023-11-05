@@ -1,19 +1,18 @@
 package pe.com.kotlin.appmovil_fast_food
 
 import android.content.Context
-import androidx.appcompat.app.AppCompatActivity
+import android.content.Intent
 import android.os.Bundle
 import android.view.View
+import android.widget.*
+import androidx.appcompat.app.AlertDialog
+import androidx.appcompat.app.AppCompatActivity
 import android.widget.AdapterView
 import android.widget.ArrayAdapter
-import android.widget.Button
-import android.widget.EditText
-import android.widget.Spinner
-import android.widget.Toast
-import androidx.appcompat.app.AlertDialog
 import pe.com.kotlin.appmovil_fast_food.entidad.Comanda
 import pe.com.kotlin.appmovil_fast_food.implementacion.ImpComanda
 import pe.com.kotlin.appmovil_fast_food.interfaz.IComanda
+
 
 class MainActivity : AppCompatActivity() {
     //objeto
@@ -121,11 +120,14 @@ class MainActivity : AppCompatActivity() {
                 MostrarMensaje(this, "validaciones!", "seleccione el producto")
             }
             else if((edtCantidadB.text.isEmpty() || edtCantidadB.text.toString() == "0") && (edtCantidadP.text.isEmpty() || edtCantidadP.text.toString() == "0")){
-                    MostrarMensaje(this,"validaciones!","Ingrese cantidad")
+                MostrarMensaje(this,"validaciones!","Ingrese cantidad")
             }
 
             else{
                 Toast.makeText(this,"se calculará la compra ...",Toast.LENGTH_SHORT).show()
+                val intent = Intent(this, DetalleActivity::class.java)
+                startActivity(intent)
+
             }
 
         }
