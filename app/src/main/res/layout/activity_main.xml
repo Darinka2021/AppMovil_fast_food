@@ -108,7 +108,7 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="10dp"
         android:layout_marginTop="15dp"
-        android:text="platos:"
+        android:text="Platos:"
         app:layout_constraintStart_toEndOf="@id/imgplato"
         app:layout_constraintTop_toBottomOf="@id/lyt_bebidas" />
 
