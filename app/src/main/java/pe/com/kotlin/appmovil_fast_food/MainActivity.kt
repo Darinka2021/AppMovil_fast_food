@@ -113,7 +113,10 @@ class MainActivity : AppCompatActivity() {
         }
 
         btnLimpiar.setOnClickListener{
-
+            spinnerBedida.setSelection(0)
+            spinnerPlato.setSelection(0)
+            edtCantidadP.setText("")
+            edtCantidadB.setText("")
         }
         btnTotalizar.setOnClickListener {
             if(spinnerPlato.selectedItemPosition.equals(0) && spinnerBedida.selectedItemPosition.equals(0) ) {
