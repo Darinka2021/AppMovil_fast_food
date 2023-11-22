@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProductoActivity">
+
+    <TextView
+        android:id="@+id/title_pd_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:textSize="30dp"
+        android:textAlignment="center"
+        android:text="Registro Producto"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/linearLayoutCompat2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@id/title_pd_2"
+        tools:ignore="MissingConstraints">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/title_pd_2">
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="nombre"
+                android:textAlignment="center"></TextView>
+
+            <EditText
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:hint="Ejm: Coca cola 250ml"></EditText>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/title_pd_2">
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="precio"
+                android:textAlignment="center"></TextView>
+
+            <EditText
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:hint="0.0"
+                android:inputType="number"></EditText>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/title_pd_2">
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="cantidad"
+                android:textAlignment="center"></TextView>
+
+            <EditText
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:hint="0"
+                android:inputType="number"></EditText>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/title_pd_2">
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="categoria"
+                android:textAlignment="center"></TextView>
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></Spinner>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/title_pd_2">
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="Estado"
+                android:textAlignment="center"></TextView>
+
+            <CheckBox
+                android:id="@+id/chk_pd_estado"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"></CheckBox>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+    <Button
+        android:id="@+id/btn_pd_registrar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="registrar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_pd_limpiar"
+        app:layout_constraintVertical_bias="0.075"></Button>
+
+    <Button
+        android:id="@+id/btn_pd_limpiar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="limpiar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="@+id/title_pd_2"
+        app:layout_constraintTop_toTopOf="@+id/title_pd_2"
+        app:layout_constraintVertical_bias="0.617"></Button>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
