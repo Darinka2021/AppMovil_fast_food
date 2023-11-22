@@ -15,7 +15,7 @@ class HomeActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         binding.btnLogout.setOnClickListener {
-            startActivity(Intent(this, MainActivity::class.java))
+            startActivity(Intent(this, ComandaActivity::class.java))
         }
     }
 }

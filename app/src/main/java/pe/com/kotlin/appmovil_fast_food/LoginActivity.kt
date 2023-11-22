@@ -43,7 +43,7 @@ class LoginActivity : AppCompatActivity() {
             }
 
             Toast.makeText(this, "Inicio de sesión exitoso", Toast.LENGTH_SHORT).show()
-            val intent = Intent(this, MainActivity::class.java)
+            val intent = Intent(this, ComandaActivity::class.java)
             startActivity(intent)
         }
     }
