@@ -10,7 +10,8 @@
         android:layout_width="409dp"
         android:layout_height="wrap_content"
         app:layout_constraintTop_toTopOf="parent"
-        tools:layout_editor_absoluteX="1dp">
+        tools:layout_editor_absoluteX="1dp"
+        tools:ignore="MissingConstraints">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
@@ -52,27 +53,24 @@
                 app:layout_constraintStart_toEndOf="@+id/img_producto">
 
                 <androidx.appcompat.widget.AppCompatImageButton
-                    android:layout_width="50dp"
+                    android:layout_width="40dp"
                     android:layout_height="45dp"
-                    android:background="#FFFFFF"
-                    android:tint="#4CAF50"
-                    tools:src="@android:drawable/ic_input_add">
+                    android:src="@drawable/less">
                 </androidx.appcompat.widget.AppCompatImageButton>
                 <TextView
                     android:id="@+id/txt_contador"
                     android:layout_width="40dp"
                     android:layout_height="match_parent"
                     android:paddingTop="10dp"
+                    android:textSize="20dp"
                     android:textStyle="bold"
                     android:textAlignment="center"
                     android:text="0"></TextView>
 
                 <androidx.appcompat.widget.AppCompatImageButton
-                    android:layout_width="50dp"
+                    android:layout_width="40dp"
                     android:layout_height="45dp"
-                    android:background="#FFFFFF"
-                    android:tint="#4CAF50"
-                    tools:src="@android:drawable/ic_input_add"></androidx.appcompat.widget.AppCompatImageButton>
+                    tools:src="@drawable/add"></androidx.appcompat.widget.AppCompatImageButton>
             </androidx.appcompat.widget.LinearLayoutCompat>
         </androidx.constraintlayout.widget.ConstraintLayout>
 
