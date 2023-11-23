@@ -13,7 +13,7 @@
         android:padding="10dp"
         android:textSize="30dp"
         android:textAlignment="center"
-        android:text="Registro Categoria"
+        android:text="CATEGORIA"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -44,7 +44,7 @@
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Ingrese nueva categoria"></EditText>
+                android:hint=" categoria"></EditText>
         </androidx.appcompat.widget.LinearLayoutCompat>
 
 
@@ -86,6 +86,6 @@
         app:layout_constraintTop_toBottomOf="@id/btn_ct_registrar">
         <ListView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"></ListView>
+            android:layout_height="match_parent"></ListView>
     </androidx.appcompat.widget.LinearLayoutCompat>
 </androidx.constraintlayout.widget.ConstraintLayout>
