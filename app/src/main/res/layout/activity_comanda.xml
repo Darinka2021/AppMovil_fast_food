@@ -53,10 +53,10 @@
     </ListView>
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btn_totalizar_pedido"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Registrar"
+        android:text="Totalizar"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
