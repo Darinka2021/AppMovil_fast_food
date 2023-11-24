@@ -13,7 +13,7 @@ import pe.com.kotlin.appmovil_fast_food.entidad.Comanda
 import pe.com.kotlin.appmovil_fast_food.implementacion.ImpComanda
 import pe.com.kotlin.appmovil_fast_food.interfaz.IComanda
 
-
+//HOLA
 class MainActivity : AppCompatActivity() {
     //objeto
     val objComanda:Comanda = Comanda()
